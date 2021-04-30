@@ -1,0 +1,5 @@
+Nous voulons récupérer la météo actuelle à Paris et l'afficher dès que nous cliquons sur le bouton *"*Quelle est la météo sur Paris ?*".*
+
+1. Créer une requête AJAX de type GET vers le service web avec l'URL [https://www.prevision-meteo.ch/services/json/paris](https://www.prevision-meteo.ch/services/json/paris). 
+2. Récupérer la réponse du service web, en checkant que tout s'est bien passé et l'afficher dans l'élément #weather-result. 
+3. Afficher la météo dès que nous cliquons sur le bouton ayant pour ID #ask-weather.

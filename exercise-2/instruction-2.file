@@ -1,0 +1,6 @@
+Nous avons ici un formulaire et nous aimerions restituer les réponses de notre formulaire dans l'élément du dessous.
+De plus, nous voudrions afficher la position de la souris quand elle se trouve dans cet élément.
+
+1. Ecouter les événements input sur l'élément #name afin de savoir quand le contenu du champ texte est changé et afficher le contenu actuel dans l'élément #res-name
+2. Ecouter l'événement du changement de choix du genre #gender et afficher le résultat dans l'élément #res-gender.
+3. Afficher les coordonnées (relatives au coin en haut à gauche de l'élément #result) de la souris à l'intérieur de l'élément #result dès que celle-ci passe par dessus.

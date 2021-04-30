@@ -1,0 +1,2 @@
+1. Créer une fonction asynchrone afin de récupérer les résultats de 2 fonctions asynchrones et retourner la somme de ces 2 fonctions asynchrones.
+2. Afficher le résultat de la promesse (de la fonction créée précédemment) dans le contenu HTML de l'élément ayant pour ID #result.

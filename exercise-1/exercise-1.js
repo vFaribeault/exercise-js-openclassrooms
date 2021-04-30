@@ -18,16 +18,16 @@ let childCountInteger = parseInt(childCountContent, 10);
 
 // Listen to the click event on parent element
 parent.addEventListener('click', function(event) {
-   event.preventDefault();    // To not execute the default behaviour
-   event.stopPropagation();   // Not really useful
-   parentCountInteger += 1;   // Increment parent-count element for each click
-   parentCountId.textContent = parentCountInteger;  // Display the new count
+  event.preventDefault();    // To not execute the default behaviour
+  event.stopPropagation();   // Not really useful
+  parentCountInteger += 1;   // Increment parent-count element for each click
+  parentCountId.textContent = parentCountInteger;  // Display the new count
 });
 
 // Listen to the click event on child element
 child.addEventListener('click', function(event) {
-   event.preventDefault();    // To not execute the default behaviour
-   event.stopPropagation();   // To stop propagation to the parent element
-   childCountInteger += 1;    // Increment child-count element for each click
-   childCountId.textContent = childCountInteger;  // Display the new count
+  event.preventDefault();    // To not execute the default behaviour
+  event.stopPropagation();   // To stop propagation to the parent element
+  childCountInteger += 1;    // Increment child-count element for each click
+  childCountId.textContent = childCountInteger;  // Display the new count
 });

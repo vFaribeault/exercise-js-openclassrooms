@@ -1,0 +1,3 @@
+1. Valider le champ "Code" du formulaire, en vérifiant que la valeur du champ commence bien par "CODE-" en utilisant la Regex suivante : /^CODE-/. Si la valeur est valide, afficher dans l'élément ayant pour ID #code-validation "Code valide", sinon afficher "Code invalide".
+2. Griser le bouton de soumission quand le code est invalide, et le dégriser quand le code est valide.
+3. Rendre le champ "Email" obligatoire, obliger l'utilisateur à entrer une adresse email valide et empêcher le formulaire de se soumettre s'il n'est pas valide, uniquement avec HTML5 (sans JS).

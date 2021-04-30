@@ -1,0 +1,6 @@
+Nous voulons entrer du texte dans le formulaire et l'envoyer vers un service web.
+Ce service web va simplement nous renvoyer notre contenu en plus d'autres informations et nous allons afficher le contenu renvoyé par le serveur.
+
+1. Créer une fonction "send()", qui va créer notre requête de type POST vers le service web avec l'URL [https://mockbin.com/request](https://mockbin.com/request). et y envoyer un contenu JSON ayant une propriété "value" qui contiendra la valeur du champ de saisie dans l'élément ayant pour ID #value.
+2. Afficher le résultat renvoyé par le service web, lorsque la requête s'est bien envoyée. Pour ce faire, nous allons afficher ce qui se trouve dans "postData.text" de la réponse dans le contenu HTML de l'élément ayant pour ID #result.
+3. Envoyer la requête (appeler la fonction "send()") dès que le formulaire ayant pour ID #form est soumis.
