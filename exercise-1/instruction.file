@@ -1,0 +1,8 @@
+Nous souhaitons lancer une bataille de clics !
+Nous avons un article qui correspond à notre parent (ID parent), et nous avons un lien qui correspond à notre enfant (ID child). 
+Le but est de cliquer soit dans le parent, soit dans l'enfant et d'afficher le nombre de clics dans chaque élément directement dans les éléments #parent-count et #child-count.
+
+1. Ecouter les événements click depuis l'élément #parent et afficher le nombre de clics dans l'élément #parent-count.
+2. Ecouter les événements click depuis l'élément #parent et afficher le nombre de clics dans l'élément #child-count.
+3. Faire en sorte que lorsque nous cliquons sur l'enfant, seul le compteur de l'enfant se mette à jour.
+4. Supprimer le comportement par défaut du clic sur le lien (changement de page).
