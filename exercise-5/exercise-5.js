@@ -1,25 +1,28 @@
 // Get value, result and form elements from DOM
+let form = document.getElementById('form');
 let value = document.getElementById('value');
 let result = document.getElementById('result');
-let form = document.getElementById('form');
+
+var send = (e) => {
+  // Cancel default behaviour
+  e.preventDefault();
+
+  fetch("https://mockbin.com/request", {
+    method: "POST",
+    headers: { 
+        'Accept': 'application/json', 
+        'Content-Type': 'application/json' 
+    },
+    body: JSON.stringify({value: value.value})
+  })
+
+  // Get the response and transform it into json
+  .then(response => response.json())
+  // Parse the response and put it inside result element
+  .then(data => {
+    result.textContent = JSON.parse(data)
+  })
+};
 
 // Listen the 'submit' event on form and call a 'send' function on it
-form.addEventListener('submit', send() {
-  // Create a new AJAX object
-  let request = new XMLHttpRequest();
-  // POST THE ELEMENT
-  // Create the request POST
-  request.open("POST", "https://mockbin.com/request");
-  // Prevent the web service that JSON will be send
-  request.setRequestHeader("Content-Type", "application/json");
-  // Send the content to the web service
-  request.send(JSON.stringify(value.value));
-  // GET THE ELEMENT  
-  request.onreadystatechange = function() {
-    if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-      result.textContent = postData.text;
-    }
-  };
-  request.open("GET", "https://mockbin.com/request");
-  request.send();
-});
+form.addEventListener('submit', send);
