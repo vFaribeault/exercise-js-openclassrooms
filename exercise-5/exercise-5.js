@@ -18,9 +18,10 @@ var send = (e) => {
 
   // Get the response and transform it into json
   .then(response => response.json())
-  // Parse the response and put it inside result element
+  // Stringify the response and put it inside result element
   .then(data => {
-    result.textContent = JSON.parse(data)
+    // You can see where to find the result inside the json
+    result.textContent = JSON.stringify((data).postData.text)
   })
 };
 
