@@ -1,7 +1,7 @@
 // Get value, result and form elements from DOM
-let form = document.getElementById('form');
 let value = document.getElementById('value');
 let result = document.getElementById('result');
+let form = document.getElementById('form');
 
 var send = (e) => {
   // Cancel default behaviour
